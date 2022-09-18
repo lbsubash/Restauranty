@@ -85,6 +85,7 @@ svg {
 .navbar {
   height: 80px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
@@ -111,6 +112,35 @@ header .logo {
   align-items: center;
 }
 
+.navbar-toggle-btn {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+.navbar-toggle-btn span {
+  width: 25px;
+  height: 1px;
+  background-color: #000;
+}
+
+.navbar-toggle-btn.active .two {
+  display: none;
+}
+
+.navbar-toggle-btn.active .one {
+  transform: rotate(45deg) translateY(3px);
+}
+
+.navbar-toggle-btn.active .three {
+  transform: rotate(-45deg) translateY(-3px);
+}
+
+.navbar .nav-right {
+  display: flex;
+  flex-basis: 70%;
+  justify-content: space-between;
+}
 .navbar nav {
   margin-left: auto;
   margin-right: 50px;
@@ -437,4 +467,137 @@ Footer
   display: flex;
   justify-content: space-between;
   background-color: #eee;
+}
+
+/*-------------------------
+    Responsiveness
+-------------------------*/
+
+/*-------------------------
+    1200px and below
+-------------------------*/
+
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 20px;
+    height: auto;
+  }
+  .navbar-toggle-btn {
+    display: flex;
+  }
+
+  .navbar .nav-right {
+    display: none;
+  }
+
+  .navbar .nav-right.active {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin: 20px 50px;
+  }
+  .nav-right.active nav {
+    margin: 0 0 30px;
+  }
+
+  .nav-right.active ul {
+    flex-direction: column;
+  }
+
+  .nav-right.active ul li {
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid black;
+  }
+
+  .hero .wrapper {
+    width: 80%;
+  }
+
+  .booking {
+    padding: 10px 40px;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .btn-container {
+    text-align: center;
+    flex-basis: 100%;
+    margin: 20px 0px;
+  }
+
+  .booking h2 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .recipes {
+    padding: 10px 50px;
+  }
+
+  .recipes-card-group {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+  }
+
+  .recipe-card:nth-child(7),
+  .recipe-card:nth-child(8) {
+    display: none;
+  }
+  .offers {
+    padding: 50px 100px;
+    justify-content: space-between;
+  }
+
+  .achievements {
+    height: auto;
+    padding: 50px 100px;
+  }
+
+  .highlight-card-group {
+    font-size: 16px;
+    flex-wrap: wrap;
+    gap: 5%;
+  }
+
+  .highlight {
+    flex-basis: 40%;
+    margin-bottom: 20px;
+  }
+
+  .reviews {
+    padding: 50px 100px;
+  }
+
+  .review-card {
+    margin-bottom: 20px;
+  }
+
+  .reviews .highlight-card-group i {
+    display: none;
+  }
+
+  .hero .wrapper {
+    width: 70%;
+    height: 70vh;
+  }
+
+  .offer-text-wrapper {
+    padding-right: 20px;
+  }
+
+  .offer-image-wrapper img {
+    width: 400px;
+  }
+
+  .footer-top {
+    flex-wrap: wrap;
+  }
+  .links {
+    flex-basis: 40%;
+    margin-bottom: 10px;
+  }
 }

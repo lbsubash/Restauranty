@@ -25,18 +25,25 @@
           <p class="logo">r</p>
           <p class="logo-text">Restauranty</p>
         </div>
-        <nav>
-          <ul>
-            <li class="nav-active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#">Reservation</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Account</a></li>
-          </ul>
-        </nav>
-        <button class="btn-primary">CONTACT NOW</button>
+        <div class="navbar-toggle-btn" id="hamburger">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </div>
+        <div class="nav-right" id="navMenu">
+          <nav>
+            <ul>
+              <li class="nav-active"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#">Reservation</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Account</a></li>
+            </ul>
+          </nav>
+          <button class="btn-primary">CONTACT NOW</button>
+        </div>
       </div>
     </header>
 
@@ -111,7 +118,9 @@
           <option value="5">5</option>
           <option value="6">6</option>
         </select>
-        <button class="btn-primary">BOOK NOW</button>
+        <div class="btn-container">
+          <button class="btn-primary">BOOK NOW</button>
+        </div>
       </section>
 
       <!-- 
@@ -420,5 +429,11 @@
         </div>
       </div>
     </footer>
+
+    <!-- 
+      - custom js link
+     -->
+
+    <script src="main.js"></script>
   </body>
 </html>
