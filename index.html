@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Restauranty - Home</title>
+  </head>
+  <body>
+    <!-- 
+      - Header -- Navbar
+     -->
+
+    <header>
+      <div class="navbar">
+        <div class="logo-wrapper">
+          <p class="logo">r</p>
+          <p class="logo-text">Restauranty</p>
+        </div>
+        <nav>
+          <ul>
+            <li class="nav-active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#">Reservation</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Account</a></li>
+          </ul>
+        </nav>
+        <button class="btn-primary">CONTACT NOW</button>
+      </div>
+    </header>
+
+    <!-- 
+      - Main
+     -->
+
+    <main>
+      <!-- 
+        - Hero
+       -->
+      <section class="hero">
+        <div class="wrapper">
+          <h1 class="section-title">
+            Organic Foods Made <span>Easy & Healthy</span>
+          </h1>
+          <div class="search-bar">
+            <div class="search-input">
+              <input type="text" name="search" id="search" />
+              <i class="bx bx-search-alt-2"></i>
+            </div>
+
+            <button class="btn-primary">
+              <i class="bx bx-search-alt-2"></i>Search
+            </button>
+          </div>
+          <div class="highlight-card-group">
+            <div class="highlight">
+              <i class="bx bx-time"></i>
+              <p>24/7 Fresh Food</p>
+            </div>
+            <div class="highlight">
+              <i class="bx bx-leaf"></i>
+              <p>Nature First</p>
+            </div>
+            <div class="highlight">
+              <i class="bx bx-home"></i>
+              <p>Home Services</p>
+            </div>
+            <div class="highlight">
+              <i class="bx bxs-truck"></i>
+              <p>Free Delivery</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        - Bookings
+       -->
+      <section class="booking">
+        <h2>Book a Table:</h2>
+        <input
+          placeholder="Pick your date"
+          type="text"
+          onfocus="(this.type = 'date')"
+          id="date"
+        />
+        <!-- <i class="bx bx-calendar"></i> -->
+        <input
+          placeholder="Select Time"
+          type="text"
+          onfocus="(this.type = 'time')"
+          id="date"
+        />
+        <select id="people" name="people">
+          <option value="0">Select Peoples</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+        <button class="btn-primary">BOOK NOW</button>
+      </section>
+
+      <!-- 
+        - Receipies
+       -->
+
+      <section class="recipes" id="menu">
+        <h2 class="section-title">Choose & Enjoy</h2>
+        <p class="section-text">
+          Inspire by Recipe and creations of worlds best chefs
+        </p>
+        <div class="recipes-card-group">
+          <div class="recipe-card">
+            <div class="card-head">
+              <p class="recipe-price section-text">$15.00</p>
+              <img src="/assets/images/placeholder.png" alt="Chicken Briyani" />
+            </div>
+            <div class="card-body">
+              <p class="recipe-title">Chicken Briyani</p>
+              <div class="recipe-details">
+                <p class="section-text"><i class="bx bx-fork"></i> Rice</p>
+                <p class="section-text"><i class="bx bx-time"></i> 15 min</p>
+              </div>
+              <button class="btn-secondary">ORDER NOW</button>
+            </div>
+          </div>
+          <div class="recipe-card">
+            <div class="card-head">
+              <p class="recipe-price section-text">$20.00</p>
+              <img src="/assets/images/placeholder.png" alt="Mutton Briyani" />
+            </div>
+            <div class="card-body">
+              <p class="recipe-title">Mutton Briyani</p>
+              <div class="recipe-details">
+                <p class="section-text"><i class="bx bx-fork"></i> Rice</p>
+                <p class="section-text"><i class="bx bx-time"></i> 20 min</p>
+              </div>
+              <button class="btn-secondary">ORDER NOW</button>
+            </div>
+          </div>
+          <div class="recipe-card">
+            <div class="card-head">
+              <p class="recipe-price section-text">$18.00</p>
+              <img src="/assets/images/placeholder.png" alt="Mutton Karachi" />
+            </div>
+            <div class="card-body">
+              <p class="recipe-title">Mutton Karachi</p>
+              <div class="recipe-details">
+                <p class="section-text"><i class="bx bx-fork"></i> Curries</p>
+                <p class="section-text"><i class="bx bx-time"></i> 30 min</p>
+              </div>
+              <button class="btn-secondary">ORDER NOW</button>
+            </div>
+          </div>
+          <div class="recipe-card">
+            <div class="card-head">
+              <p class="recipe-price section-text">$15.00</p>
+              <img src="/assets/images/placeholder.png" alt="Chicken Korma" />
+            </div>
+            <div class="card-body">
+              <p class="recipe-title">Chicken Korma</p>
+              <div class="recipe-details">
+                <p class="section-text"><i class="bx bx-fork"></i> Curries</p>
+                <p class="section-text"><i class="bx bx-time"></i> 20 min</p>
+              </div>
+              <button class="btn-secondary">ORDER NOW</button>
+            </div>
+          </div>
+          <div class="recipe-card">
+            <div class="card-head">
+              <p class="recipe-price section-text">$15.00</p>
+              <img src="/assets/images/placeholder.png" alt="Chicken Nihari" />
+            </div>
+            <div class="card-body">
+              <p class="recipe-title">Chicken Nihari</p>
+              <div class="recipe-details">
+                <p class="section-text"><i class="bx bx-fork"></i> Curries</p>
+                <p class="section-text"><i class="bx bx-time"></i> 30 min</p>
+              </div>
+              <button class="btn-secondary">ORDER NOW</button>
+            </div>
+          </div>
+          <div class="recipe-card">
+            <div class="card-head">
+              <p class="recipe-price section-text">$20.00</p>
+              <img src="/assets/images/placeholder.png" alt="Arabic Salad" />
+            </div>
+            <div class="card-body">
+              <p class="recipe-title">Arabic Salad</p>
+              <div class="recipe-details">
+                <p class="section-text"><i class="bx bx-fork"></i> Salad</p>
+                <p class="section-text"><i class="bx bx-time"></i> 10 min</p>
+              </div>
+              <button class="btn-secondary">ORDER NOW</button>
+            </div>
+          </div>
+          <div class="recipe-card">
+            <div class="card-head">
+              <p class="recipe-price section-text">$5.00</p>
+              <img src="/assets/images/placeholder.png" alt="Samosa" />
+            </div>
+            <div class="card-body">
+              <p class="recipe-title">Samosa</p>
+              <div class="recipe-details">
+                <p class="section-text">
+                  <i class="bx bx-fork"></i> Refreshments
+                </p>
+                <p class="section-text"><i class="bx bx-time"></i> 30 min</p>
+              </div>
+              <button class="btn-secondary">ORDER NOW</button>
+            </div>
+          </div>
+          <div class="recipe-card">
+            <div class="card-head">
+              <p class="recipe-price section-text">$10.00</p>
+              <img src="/assets/images/placeholder.png" alt="Rasamalai" />
+            </div>
+            <div class="card-body">
+              <p class="recipe-title">Rasamalai</p>
+              <div class="recipe-details">
+                <p class="section-text">
+                  <i class="bx bx-fork"></i> Refreshments
+                </p>
+                <p class="section-text"><i class="bx bx-time"></i> 45 min</p>
+              </div>
+              <button class="btn-secondary">ORDER NOW</button>
+            </div>
+          </div>
+        </div>
+        <div class="btn">
+          <button class="btn-primary">VIEW ALL</button>
+        </div>
+      </section>
+
+      <!-- 
+        - Offers
+       -->
+
+      <section class="offers">
+        <div class="offer-text-wrapper">
+          <p class="section-subtitle">Special Offer</p>
+          <p class="section-title">50% OFF</p>
+          <p class="section-text">
+            Lorem ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <p class="section-subtitle">Use Coupon: 50OFF</p>
+          <button class="btn-primary">ORDER NOW</button>
+        </div>
+        <div class="offer-image-wrapper">
+          <img
+            src="/assets/images/placeholder.png"
+            alt="Offer"
+            width="800px"
+            height="100%"
+            class="offer-img"
+          />
+        </div>
+      </section>
+
+      <!-- 
+        - Achievements
+       -->
+
+      <section class="achievements">
+        <h2 class="section-title">Why Choose Us?</h2>
+        <div class="highlight-card-group">
+          <div class="highlight">
+            <i class="bx bxs-briefcase bx-lg"></i>
+            <p>10+ Years of Experience</p>
+          </div>
+          <div class="highlight">
+            <i class="bx bxs-user bx-lg"></i>
+            <p>200+ Professional Chefs</p>
+          </div>
+          <div class="highlight">
+            <i class="bx bxs-group bx-lg"></i>
+            <p>5000+ Happy Customers</p>
+          </div>
+          <div class="highlight">
+            <i class="bx bxs-trophy bx-lg"></i>
+            <p>20+ Awards Won</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        -Reviews
+       -->
+
+      <section class="reviews">
+        <h2 class="section-title">Customer Reviews</h2>
+        <div class="highlight-card-group">
+          <i class="bx bx-chevron-left bx-lg"></i>
+          <div class="review-card">
+            <div class="card-left">
+              <div class="circle"></div>
+            </div>
+            <div class="card-right">
+              <p>John Doe</p>
+              <p class="section-text">
+                I order food from there, they have very quick service, and taste
+                is so good. I love it
+              </p>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="card-left">
+              <div class="circle"></div>
+            </div>
+            <div class="card-right">
+              <p>John Smith</p>
+              <p class="section-text">
+                I order food from there, they have very quick service, and taste
+                is so good. I love it
+              </p>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="card-left">
+              <div class="circle"></div>
+            </div>
+            <div class="card-right">
+              <p>Pamela John</p>
+              <p class="section-text">
+                I order food from there, they have very quick service, and taste
+                is so good. I love it
+              </p>
+            </div>
+          </div>
+          <i class="bx bx-chevron-right bx-lg"></i>
+        </div>
+      </section>
+    </main>
+
+    <!-- 
+      - Footer
+     -->
+
+    <footer>
+      <div class="footer-top">
+        <div class="links">
+          <h3>Popular Page</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Chefs</a></li>
+            <li><a href="#">Our Blog</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="links">
+          <h3>Popular Category</h3>
+          <ul>
+            <li><a href="#">Chicken</a></li>
+            <li><a href="#">Mutton</a></li>
+            <li><a href="#">Rice</a></li>
+            <li><a href="#">Vegeterien</a></li>
+            <li><a href="#">Refreshments</a></li>
+            <li><a href="#">Sweets</a></li>
+          </ul>
+        </div>
+        <div class="links">
+          <h3>Reach Us!</h3>
+          <ul>
+            <li>
+              <i class="bx bx-mobile-alt"></i>
+              <a href="tel:+9710551234567">+971(0) 55 1234567</a>
+            </li>
+            <li>
+              <i class="bx bxs-phone"></i>
+              <a href="tel:+971041234567">+971(0) 4 1234567</a>
+            </li>
+            <li>
+              <i class="bx bx-food-menu"></i>
+              <a href="tel:+71041234568">+71(0) 4 1234568</a>
+            </li>
+            <li>
+              <i class="bx bxs-envelope"></i>
+              <a href="mailto:info@restauranty.ce">info@restauranty.ce</a>
+            </li>
+            <li>
+              <i class="bx bx-globe"></i> <a href="#">www.restauranty.oe</a>
+            </li>
+          </ul>
+        </div>
+        <div class="links">
+          <h3>Connect with Us!</h3>
+          <div class="social-links">
+            <i class="bx bxl-facebook-square bx-lg"></i>
+            <i class="bx bxl-twitter bx-lg"></i>
+            <i class="bx bxl-google-plus bx-lg"></i>
+            <i class="bx bxl-instagram bx-lg"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2019 Restauranty. All Rights Reserved.</p>
+        <div class="credit-card-icons">
+          <i class="bx bx-credit-card bx-md"></i>
+          <i class="bx bx-credit-card bx-md"></i>
+          <i class="bx bx-credit-card bx-md"></i>
+          <i class="bx bx-credit-card bx-md"></i>
+          <i class="bx bx-credit-card bx-md"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
